@@ -3,16 +3,16 @@
 }
 
 .login_box {
-  width: 23em;
+  width: 21.5em;
   margin: 0 auto;
   border: 1px solid #ddd;
-  padding: 4em;
+  padding: 3em;
 }
 
 .loginText {
   /* border: 1px solid red; */
   font-weight: 550;
-  font-size: 25px;
+  font-size: 22px;
   text-align: center;
   padding-bottom: 0.5em;
 }
@@ -35,7 +35,7 @@
 , #userPw
 , .kakao_box
 , .login_submit {
-  width: 25em;
+  width: 23em;
   height: 3.8em;
   outline: none;
   border: 1px solid #ddd;
@@ -44,7 +44,7 @@
 
 .login_submit
 , .kakao_box {
-  width: 24.4em;
+  width: 22.5em;
   height: 4em;
   font-size: 15px;
   cursor: pointer;
