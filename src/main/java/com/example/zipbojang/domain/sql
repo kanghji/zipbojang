@@ -1,0 +1,95 @@
+use zipbojangDB;
+
+create table admin (
+	admin_no int primary key auto_increment,
+    admin_nm varchar(20) not null,
+    admin_id varchar(50) not null,
+    admin_pw varchar(20) not null,
+    admin_email varchar(50) not null
+);
+
+insert into admin values (1, 'zipbojang', 'admin', '123400', 'admin@gmail.com');
+
+create table user (
+	user_no int primary key auto_increment,
+    user_email varchar(50) not null,
+    user_pw varchar(100) not null
+);
+
+select * from user;
+drop table user;
+delete from user where user_no = 1;
+alter table user drop column user_id;
+commit;
+
+create table region_category (
+	category_no int primary key auto_increment,
+    category_code varchar(10) not null unique key,
+    category_nm varchar(10) not null
+);
+
+create table community (
+	comm_no int primary key auto_increment,
+    comm_category_code varchar(10) not null,
+    comm_user_id varchar(50) not null,
+    comm_dt datetime not null default now(),
+    comm_update_dt datetime not null default now() on update now(),
+    comm_title varchar(100) not null,
+    comm_content varchar(10000) not null,
+    comm_cnt int not null,
+    constraint community_fk_1
+    foreign key (comm_category_code) references region_category (category_code)
+);
+
+create table comm_image (
+	image_no int primary key auto_increment,
+    image_comm_no int not null,
+    image_nm varchar(500) not null,
+    constraint comm_image_fk_1 
+    foreign key (image_comm_no) references community (comm_no) on delete cascade
+);
+
+
+create table community_reply (
+	reply_no int primary key auto_increment,
+    reply_comm_no int not null,
+    reply_user_id varchar(50) not null,
+    reply_dt datetime not null default now(),
+    reply_update_dt datetime not null default now() on update now(),
+    reply_content varchar(1000) not null,
+    reply_cnt int not null,
+    foreign key (reply_comm_no) references community(comm_no)
+);
+
+create table notice (
+	notice_no int primary key auto_increment,
+    notice_admin_id varchar(50) not null,
+    notice_dt datetime not null default now(),
+    notice_title varchar(100) not null,
+    notice_content varchar(10000) not null
+);
+
+commit;
+
+create table bookmark (
+	bookmark_no int primary key auto_increment,
+    bookmark_user_id varchar(50) not null,
+    bookmark_dt datetime not null default now()
+);
+
+-- 북마크, 아파트, 뉴스는 일단 보류 
+-- 위에 구현한 다음 실행
+
+
+
+
+
+
+
+
+
+
+
+
+
+

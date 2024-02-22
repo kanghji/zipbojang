@@ -1,0 +1,38 @@
+
+/* header */
+
+.gnb_menu {
+  color: #424242;
+}
+
+.gnb a:hover {
+  color: blue;
+}
+
+/* main */
+
+.section_01 {
+  background-color: skyblue; 
+}
+
+.search_btn {
+  background-color: gainsboro;
+}
+
+.section_03 {
+  background-color: #f8f3f3;
+}
+
+.main_comm_top {
+  border-bottom: 1px solid gray;
+}
+
+
+/* login */
+
+
+
+
+/* footer */
+
+

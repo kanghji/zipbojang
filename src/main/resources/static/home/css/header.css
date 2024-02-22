@@ -1,0 +1,64 @@
+.header_wrap {
+  /* border: 1px solid orange; */
+  background-color: rgba(255,255,255, 0);
+  /* display: flex;
+  justify-content: center; */
+}
+
+.header {
+  border-bottom: 1px solid #ddd;
+  /* width: 100em; */
+  display: flex;
+  justify-content:space-between;
+}
+
+/* logo */
+
+.logo_inner {
+  /* width: 20em; */
+  padding: 1.5em;
+  /* border: 1px solid blueviolet; */
+}
+
+.logo {
+  font-size: 40px;
+  font-weight: 550;
+}
+
+/* menu */
+
+.menu_inner {
+  margin: auto 0;
+  padding: 1.5em;
+}
+
+/* .gnb {
+  border: 1px solid red;
+  width: 45em;
+} */
+
+.gnb_menu {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.gnb_common {
+  padding-right: 2em;
+  font-size: 17px;
+  font-weight: 550;
+}
+
+.gnb_login {
+  padding-left: 5em;
+  font-size: 13px;
+  font-weight: 550;
+  padding-top: 0.4em;
+}
+
+
+
+
+
+
+

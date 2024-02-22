@@ -1,0 +1,161 @@
+/****************** section 01 **************/
+
+.section {
+  display: flex;
+  justify-content: center;
+}
+
+.section_inner {
+  margin: auto 0;
+}
+
+.section_01 {
+  /* border: 1px solid brown; */
+  height: 25em;
+}
+
+.title_box {
+  /* border: 1px solid green; */
+  font-size: 35px;
+  font-weight: 700;
+  padding-bottom: 1.5em;
+  display: flex;
+  justify-content: center;
+}
+
+.search_box {
+  display: flex;
+  justify-content: center;
+}
+
+#search_input {
+  width: 30em;
+  height: 4em;
+  padding: 1.8em;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  border-radius: 10px 0 0 10px;
+  background-color: rgba(242,242,242,1.00);
+}
+
+.search_btn {
+  border: none;
+  border-radius: 0 10px 10px 0;
+  width: 5em;
+  height: 4.8em;
+  cursor: pointer;
+}
+
+/**************** section 02 *******************/
+
+.section_02 {
+  height: 25em;
+  /* border: 1px solid blue; */
+}
+
+.section_inner_02{
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+}
+
+.main_comm_top {
+  /* border: 1px solid green; */
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.main_comm_title {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.main_comm_link {
+  font-size: 15px;
+  color: #ddd;
+}
+
+.news_top, .notice_top {
+  width: 25em;
+}
+
+.news_box {
+  padding-right: 10em;
+}
+
+.main_content {
+  /* border: 1px solid purple; */
+  padding: 1em 1em 0;
+}
+
+.comm_content {
+  /* border: 1px solid palevioletred; */
+  padding-bottom: 1em;
+  font-size: 15px;
+}
+
+/************* section 03 **************/
+
+.comm_inner {
+  /* border: 1px solid blue; */
+  width: 65em;
+  height: 35em;
+}
+
+.story_content {
+  padding: 1em;
+}
+
+/* 이미지 대체 div임. 추후에 삭제 예정 */
+.comm_img {
+  border: 1px solid black;
+  width: 10em;
+  height: 10em;
+}
+
+.story_content {
+  display: flex;
+  justify-content: center;
+  padding-left: 13em;
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+  grid-template-rows: 14em 14em;
+}
+
+.story_inner {
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: repeat(2,200px);
+  padding-right: 12.5em; 
+}
+
+.comm_detail_title {
+  font-size: 18px;
+  font-weight: 550;
+}
+
+.story_detail {
+  padding-top: 1em;
+}
+
+.comm_detail {
+  padding-top: 2em;
+}
+
+/* .comm_title {
+  font-size: 20px;
+} */
+
+.comm_top {
+  padding-top: 4em;
+}
+
+
+
+
+
+
+
+

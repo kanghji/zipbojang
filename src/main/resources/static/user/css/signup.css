@@ -1,0 +1,94 @@
+.join_wrap {
+  /* border: 1px solid purple; */
+  padding: 2.3em 0 6em;
+}
+
+.join_box {
+  width: 23em;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  padding: 3em;
+}
+
+.joinTitle {
+  font-size: 25px;
+  font-weight: 550;
+}
+
+.infoText {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 1em 0 2em 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.join_comm_box {
+  padding-top: 2em;
+  /* border: 1px solid green; */
+}
+
+.join_inp_comm {
+  padding-top: 1em;
+}
+
+.join_text_comm {
+  font-size: 15px;
+  font-weight: 550;
+}
+
+.join_pwchk {
+  /* border: 1px solid red; */
+  padding: 0.5em 0 2em 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.agreeTitle {
+  font-weight: 550;
+}
+
+.agree_inner {
+  /* border: 1px solid red; */
+  padding: 2em 0 2em 0;
+  font-size: 13px;
+}
+
+.allAgree {
+  padding: 1em 0 1em 0;
+}
+
+.agreeCheak {
+  display: flex;
+  padding-bottom: 0.5em;
+}
+
+.ageText {
+  padding: 1em 0 0 0.3em;
+  font-size: 12px;
+}
+
+.agree_detail {
+  padding-left: 0.5em;
+}
+
+.inp_comm {
+  width: 25em;
+  height: 3.5em;
+  padding: 0 1em 0 1em;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  outline: none;
+}
+
+.joinSubmit {
+  width: 27em;
+  height: 3.5em;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+
+.msg_box {
+  color: red;
+  font-size: 13px;
+  padding: 0.5em 0 0.5em 0.3em;
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.zipbojang.mapper.user.RegisterMapper">
+
+	<insert id="userSignUp">
+		INSERT INTO USER (USER_NO, USER_EMAIL, USER_PW) VALUES (#{user_no}, #{user_email}, #{user_pw})
+	</insert>
+
+	<select id="userIdChk" resultType="Integer">
+		SELECT COUNT(*) FROM USER WHERE USER_EMAIL = #{user_email}
+	</select>
+
+</mapper>

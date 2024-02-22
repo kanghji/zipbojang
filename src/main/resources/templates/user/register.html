@@ -1,0 +1,68 @@
+<!-- header -->
+<th:block th:replace="/home/header.html :: headerFragment"></th:block>
+
+<div class="join_wrap">
+  <div class="join_box">
+    <div class="join_inner">
+      <strong class="joinTitle">간편 회원정보 입력</strong>
+      <p class="infoText">서비스 이용을 위해 아래 정보를 입력해주세요.</p>
+
+      <form action="/user/register" method="post" class="user_joinForm">
+        <!-- 이메일 -->
+        <div class="joinEmail_box join_comm_box">
+          <label class="join_id join_text_comm" >이메일</label>
+          <div class="join_id_inp join_inp_comm">
+            <input type="text" placeholder="이메일 입력" class="inp_comm user_email" name="user_email" th:value="${user_email}" onkeyup="inputEmail()" />
+            <p class="msg_box emailMsg" th:text="${valid_user_email}"></p>
+          </div>
+        </div>
+        <!-- 비밀번호 -->
+        <div class="joinPw_box join_comm_box">
+          <label class="join_pw join_text_comm">비밀번호</label>
+          <div class="join_pw_inp join_inp_comm">
+            <input type="password" placeholder="8자리 이상 영문,숫자,특수문자 포함" class="inp_comm user_pw" name="user_pw" 
+            th:value="${user_pw}" onkeyup="inputPw()"/>
+            <p class="msg_box pwMsg" th:text="${valid_user_pw}"></p>
+          </div>
+          <div class="join_pw_inp join_pwchk">
+            <input type="password" placeholder="비밀번호 재확인" class="inp_comm user_pwChk" name="user_pw2" onkeyup="inputPwChk()" />
+            <p class="msg_box ChkPwMsg"></p>
+          </div>
+        </div>
+        <!-- 약관동의 -->
+        <div class="agree_inner chkbox_group">
+            <strong class="agreeTitle">서비스 약관 동의</strong>
+
+            <div class="allAgree">
+             <label><input type="checkbox" name="agreement" id="chk_all" value="selectAll" />네, 모두 동의합니다.</label>
+            </div>
+            
+            <div class="agreeCheak">
+              <label><input type="checkbox" class="chk" id="chk1" name="agreement" value="terms1">[필수] 만 14세 이상입니다.</label>
+            </div>
+          
+            <div class="agreeCheak">
+              <label><input type="checkbox" class="chk" name="agreement" id="chk2" value="terms2">[필수] 집보장 서비스 이용약관 동의</label>
+              <div class="agree_detail"><a th:href="@{/user/agreeService}">자세히</a></div>
+            </div>
+
+            <div class="agreeCheak">
+              <label><input type="checkbox" class="chk" name="agreement" id="chk3" value="terms3">[필수] 개인정보 수집 및 이용 동의</label>
+              <div class="agree_detail"><a th:href= "@{/user/agreeInfo}">자세히</a></div>
+            </div>
+            <p class="ageText">만 14세 이상 회원 가입 가능합니다.</p>
+         </div>
+
+        </div>
+
+        <div class="joinBtn">
+          <input type="submit" value="회원가입" class="joinSubmit"/>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+<th:block th:replace="/home/footer :: scriptFragment"></th:block>
