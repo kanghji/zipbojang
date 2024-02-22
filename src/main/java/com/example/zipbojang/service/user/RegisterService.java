@@ -10,6 +10,7 @@ import com.example.zipbojang.domain.UserDto;
 @Service
 public interface RegisterService {
 
+//	유효성 검사
 	Map<String, String> userRegister (Errors errors);
 	
 //	회원가입

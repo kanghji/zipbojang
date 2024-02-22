@@ -45,6 +45,7 @@ public class RegisterController {
 				System.out.println("key + validResult.get(key) = " +  key + " + " +  validResult.get(key));
 				model.addAttribute(key, validResult.get(key));
 			}
+			
 			return "user/register";
 		}
 		
